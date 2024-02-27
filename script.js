@@ -28,5 +28,4 @@ dobInput.addEventListener('input', function(event) {
 
     ageOutput.innerText = `You are ${ageYears} years, ${ageMonths} months, ${ageDays} days, ${ageHours} hours, ${ageMinutes} minutes, and ${ageSeconds} seconds old.`;
     console.log(`You are ${ageYears} years, ${ageMonths} months, ${ageDays} days, ${ageHours} hours, ${ageMinutes} minutes, and ${ageSeconds} seconds old.`);
-    dobInput.value = ''; // Clear input field
 });
