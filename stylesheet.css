@@ -28,7 +28,7 @@ body{
     box-shadow: 0 0 10px 7px #B6BBC4;
     min-width: 300px;
 }
-h5{
+label{
     font-size: 1.4rem;
 }
 form{

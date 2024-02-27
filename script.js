@@ -1,9 +1,8 @@
-const ageForm = document.getElementById('ageForm');
 const dobInput = document.getElementById('dob');
 const ageOutput = document.getElementById('age');
 const h5El = document.querySelector('h5');
 
-ageForm.addEventListener('input', function(event) {
+dobInput.addEventListener('input', function(event) {
     event.preventDefault();
 
     const dob = new Date(dobInput.value);
@@ -28,12 +27,6 @@ ageForm.addEventListener('input', function(event) {
     const ageSeconds = Math.floor(ageInSeconds % 60);
 
     ageOutput.innerText = `You are ${ageYears} years, ${ageMonths} months, ${ageDays} days, ${ageHours} hours, ${ageMinutes} minutes, and ${ageSeconds} seconds old.`;
+    console.log(`You are ${ageYears} years, ${ageMonths} months, ${ageDays} days, ${ageHours} hours, ${ageMinutes} minutes, and ${ageSeconds} seconds old.`);
     dobInput.value = ''; // Clear input field
 });
-
-function displayErrorMessage(message) {
-    h5El.innerText = message;
-    setTimeout(function() {
-        h5El.innerText = 'Enter your date of birth:';
-    }, 4000);
-}
