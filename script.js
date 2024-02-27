@@ -3,7 +3,7 @@ const dobInput = document.getElementById('dob');
 const ageOutput = document.getElementById('age');
 const h5El = document.querySelector('h5');
 
-ageForm.addEventListener('submit', function(event) {
+ageForm.addEventListener('input', function(event) {
     event.preventDefault();
 
     const dob = new Date(dobInput.value);
