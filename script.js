@@ -28,7 +28,7 @@ ageForm.addEventListener('submit', function(event) {
     const ageSeconds = Math.floor(ageInSeconds % 60);
 
     ageOutput.innerText = `You are ${ageYears} years, ${ageMonths} months, ${ageDays} days, ${ageHours} hours, ${ageMinutes} minutes, and ${ageSeconds} seconds old.`;
-    ageOutput.style.fontSize = '2rem';
+    ageOutput.style.fontSize = '1.5rem';
     dobInput.value = ''; // Clear input field
 });
 
